@@ -1,9 +1,29 @@
+//---------------------object--------------------
 const target ={a:1,b:2,d:3};
 const source ={b:4,c:5};
-
 const newobj = Object.assign(target,source);
-
 console.log(newobj == source);// ei khane true asbe
+
+
+const user = {
+  username: "hridoy",
+  greet() {
+    return `Hello, ${this.username}!`;
+  }
+};
+console.log(user.greet()); // Output: Hello, hridoy!
+
+
+const person = {
+  name: "Misu",
+  address: {
+    city: "Dhaka",
+    area: "Dhanmondi"
+  }
+};
+console.log(person.address.city); // Output: Dhaka
+
+
 
 
 // object proprty
@@ -14,7 +34,7 @@ console.log(newobj == source);// ei khane true asbe
 //set
 
 
-// --------------ekhon amra map er bisoi shikbo
+// --------------ekhon amra map er bisoi shikbo----------
 
 const fruits = new Map();
 fruits.set ('apple',500);
